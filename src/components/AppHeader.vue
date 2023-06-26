@@ -22,6 +22,9 @@
                     <li v-for="liElements,index in headerList" :class="liElements.active === true ? 'activeColor' : ''" @click='toggleActive(index)'>
                         {{liElements.text}}
                     </li>
+                    <li>
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </li>
       </ul>
     </nav>
     </div>
@@ -73,6 +76,11 @@ export default {
 @use '../styles/partials/mixin' as *; 
 @use '../styles/partials/variables' as *;
 
+nav{
+  padding-top: 3rem;
+  max-width: 600px;
+  margin: auto;
+}
 .container{
   max-width: 1200px;
 }
