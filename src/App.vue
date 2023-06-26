@@ -21,6 +21,7 @@ export default{
 <style lang="scss">
 @import "./bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
 
 body{
   font-family: 'Catamaran', sans-serif;

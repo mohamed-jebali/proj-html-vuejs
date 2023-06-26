@@ -5,8 +5,10 @@
                 TODAYS' PICK
             </span>
             <div class="text-jumbo">
-                Food Corner: Top Japanese Restaurants for Sushi <br>
-                March 25, 2019
+                Food Corner: Top Japanese Restaurants for Sushi
+                <p class="date-jumbo">
+                    March 25, 2019
+                </p>
             </div>
         </div>
     </div>
@@ -21,10 +23,12 @@ export default {
 @use '../styles/partials/variables' as *;
 
     .jumbo{
-        background-image: url(../assets/img/slide1-bg-66x66.jpg);
+        background-image: url(https://avada.website/food/wp-content/uploads/sites/118/2019/02/slide1-bg.jpg);
         background-size: cover;
-        height: 300px;
-        padding: 2rem 0;
+        background-position: top;
+        height: 500px;
+        padding: 10rem 0;
+        background-attachment: fixed;
     }
     .title-jumbo{
         background-color: $orange;
@@ -33,15 +37,35 @@ export default {
         font-weight: 200;
         border-radius: 0.5rem;
         font-size: 0.9rem;
+        position: relative;
+        bottom: 15px;
     }
     .text-jumbo{
-        margin-top: 2rem;
-        font-size: 2rem;
+        margin-top: 0.5rem;
+        font-size: 2.5rem;
+        font-family: 'Vidaloka', serif;
+        padding: 0 2rem;
+        &:hover{
+            color: $orange;
+            transition: 0.5s;
+        }
     }
+    
     .box-jumbo{
         background-color: white;
-        padding: 4rem;
-        max-width: 600px;
+        max-width: 680px;
         border-radius: 1rem;
+    }
+    .date-jumbo{
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1rem;
+        font-weight: 200;
+        padding-bottom: 2rem;
+        padding-top: 0.5rem;
+        color: $darkGrey;
+        &:hover{
+            color: $darkGrey;
+            transition: 0.5s;
+        }
     }
 </style>
