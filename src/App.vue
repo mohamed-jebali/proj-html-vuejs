@@ -24,5 +24,8 @@ export default{
 body{
   font-family: 'Catamaran', sans-serif;
 }
+ul{
+  list-style-type: none;
+}
 
 </style>

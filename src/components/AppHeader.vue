@@ -17,12 +17,56 @@
           <img class="socials-icon" src="../assets/socials.svg" alt="">
         </div>
       </div>
+      <nav>
+      <ul class='d-flex justify-content-between'>
+                    <li v-for="liElements,index in headerList" :class="liElements.active === true ? 'activeColor' : ''" @click='toggleActive(index)'>
+                        {{liElements.text}}
+                    </li>
+      </ul>
+    </nav>
     </div>
   </header>
 </template>
 <script>
 export default {
-  
+  data(){
+        return{
+            headerList:[
+                {
+                    text:"Home",
+                    active: true
+                },
+                {
+                    text:"Recipes",
+                    active: false,
+                },
+                {
+                    text:"Places",
+                    active: false,
+                },
+                {
+                    text:"Blog",
+                    active: false,
+                },
+                {
+                    text:"About",
+                    active: false,
+                },
+                {
+                    text:"Contact",
+                    active: false,
+                },
+            ],
+
+        }
+      },
+      methods: {
+        toggleActive(index) {
+        this.headerList.forEach((item, i) => {
+        item.active = i === index;
+      });
+    }
+      },
 }
 </script>
 <style lang="scss" scoped>
@@ -39,6 +83,12 @@ header{
   .left-side{
     font-size: 0.85rem;
     font-weight: 300;
+    span{
+      &:hover{
+            color: $orange;
+            transition: 0.5s;
+        }
+    }
     .ios{
       background-color: $orange;
       padding: 0.05rem 0.35rem;
