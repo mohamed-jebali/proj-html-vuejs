@@ -25,6 +25,7 @@ export default{
 
 body{
   font-family: 'Catamaran', sans-serif;
+  background-color: #f5f5f1;
 }
 ul{
   list-style-type: none;

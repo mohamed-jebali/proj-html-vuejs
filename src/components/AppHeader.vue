@@ -93,9 +93,7 @@ nav{
         }
   }
 }
-.container{
-  max-width: 1200px;
-}
+
 header{
   background-color: $lightGrey;
   height: 250px;

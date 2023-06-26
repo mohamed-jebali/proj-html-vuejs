@@ -2,16 +2,34 @@
     <div class="container bg-white">
         <div class="foodie-wrapper">
             <h4 class="text-center">
-                Foodie Journal
+                FOODIE JOURNAL
             </h4>
             <div class="box-foodie">
                 <div class="single-box text-center">
-                    <img src="../../assets/img/single-post-img3-600x395.jpg" alt="">
+                    <img src="../../assets/img/single-post-img3-600x395.jpg" alt="single-post-3">
                     <p class="text-foodie">
                         Food Corner: Top Japanese Restaurants for Sushi
                     </p>
                     <p class="date-foodie">
-                        By admin|March 25th, 2019
+                        By admin | March 25th, 2019
+                    </p>
+                </div>
+                <div class="single-box text-center">
+                    <img src="../../assets/img/fi-roundup-600x395.jpg" alt="roundup-image">
+                    <p class="text-foodie">
+                        Roundup: My New Favourite Recipes For Healthy Living
+                    </p>
+                    <p class="date-foodie">
+                        By admin | March 25th, 2019
+                    </p>
+                </div>
+                <div class="single-box text-center">
+                    <img src="../../assets/img/fi-toasts-600x395.jpg" alt="fi-toasts-image">
+                    <p class="text-foodie">
+                        Why These Toasts with Tea are My New Favorite
+                    </p>
+                    <p class="date-foodie">
+                        By admin | March 25th, 2019
                     </p>
                 </div>
             </div>
@@ -26,18 +44,22 @@ export default {
 </script>
 <style lang="scss" scoped>
 
+.container{
+    position: relative;
+    bottom: 4rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
 .foodie-wrapper{
     background-color: white;
-    border: 1px solid black;
 }
 h4{
-    padding: 1.5rem;
+    padding: 1.1rem;
+    font-size: 1.1rem;
+    font-weight: 200;
 }
 .box-foodie{
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
-    border: 1px solid black;
     img{
         height: 265px;
     }
@@ -48,6 +70,7 @@ h4{
 .text-foodie{
     font-family: 'Vidaloka', serif;
     font-size: 1.3rem;
+    margin-top: 1rem;
     padding: 0 4.5rem;
 }
 .date-foodie{
