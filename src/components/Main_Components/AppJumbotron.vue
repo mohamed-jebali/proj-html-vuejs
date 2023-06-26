@@ -19,8 +19,8 @@ export default {
 }
 </script>
 <style lang="scss">
-@use '../styles/partials/mixin' as *; 
-@use '../styles/partials/variables' as *;
+@use '../../styles/partials/mixin' as *; 
+@use '../../styles/partials/variables' as *;
 
     .jumbo{
         background-image: url(https://avada.website/food/wp-content/uploads/sites/118/2019/02/slide1-bg.jpg);
