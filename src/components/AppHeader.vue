@@ -13,8 +13,13 @@
         <div class="brand">
           <img src="../assets/img/avada-food-logo.png" alt="brand-logo-food-avada">
         </div>
-        <div class="right-side">
-          <img class="socials-icon" src="../assets/socials.svg" alt="">
+        <div class="right-side d-flex">
+          <img class="socials-icon" src="../assets/socials/facebook.svg" alt="facebook-logo" title="facebook">
+          <img class="socials-icon" src="../assets/socials/instagram.svg" alt="instagram-logo" title="Instagram">
+          <img class="socials-icon" src="../assets/socials/twitter.svg" alt="twitter-logo" title="Twitter">
+          <img class="socials-icon" src="../assets/socials/youtube.svg" alt="youtube-logo" title="YouTube">
+          <img class="socials-icon" src="../assets/socials/tiktok.svg" alt="tiktok-logo" title="TikTok">
+          <img class="socials-icon" src="../assets/socials/pinterest.svg" alt="pinterest-logo" title="Pinterest">
         </div>
       </div>
       <nav>
@@ -80,6 +85,13 @@ nav{
   padding-top: 3rem;
   max-width: 600px;
   margin: auto;
+  font-weight: 200;
+  ul li{
+    &:hover{
+            color: $orange;
+            transition: 0.5s;
+        }
+  }
 }
 .container{
   max-width: 1200px;
@@ -107,8 +119,15 @@ header{
     }
   }
   .right-side{
+
     .socials-icon{
-      height: 18px;
+      height: 35px;
+      margin-right: 0.25rem;
+      &:hover{
+        background-color: white;
+        border-radius: 0.25rem;
+        transition: 1s;
+      }
     }
   }
 }
