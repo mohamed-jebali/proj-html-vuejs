@@ -104,6 +104,11 @@ export default {
     }
     img{
         width: 100%;
+        &:hover{
+            opacity: 0.5;
+            transition: 1s;
+            background-color: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+        }
     }
     button{
         background-color: $orange;
