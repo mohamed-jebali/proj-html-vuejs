@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-6 card-dish-big p-0">
+            <div class="card-dish-big p-0">
                 <div class="img-container">
                     <img src="../../assets/img/Yogurt-Nan.jpg"/>
                 </div>
@@ -22,8 +22,31 @@
                     </button>
                 </div>
             </div>
-            <div class="col-3 px-4 card-dish-big">
-                <img :src="getImagePath(imageRecipe)" alt="">
+            <div class="container-single-dish d-flex">
+                <div class="single-dish mb-3">
+                    <img src="../../assets/img/r-rachel-park-366508-unsplash-min-1200x790.jpg" alt="rachel-park-dish">
+                </div>
+                <div class="single-dish mb-3">
+                    <img src="../../assets/img/r-rachel-park-366508-unsplash-min-1200x790.jpg" alt="rachel-park-dish">
+                </div>
+                <div class="single-dish mb-3">
+                    <img src="../../assets/img/r-rachel-park-366508-unsplash-min-1200x790.jpg" alt="rachel-park-dish">
+                </div>
+                <div class="single-dish mb-3">
+                    <img src="../../assets/img/r-rachel-park-366508-unsplash-min-1200x790.jpg" alt="rachel-park-dish">
+                </div>
+                <div class="single-dish mb-3">
+                    <img src="../../assets/img/r-rachel-park-366508-unsplash-min-1200x790.jpg" alt="rachel-park-dish">
+                </div>
+                <div class="single-dish mb-3">
+                    <img src="../../assets/img/r-rachel-park-366508-unsplash-min-1200x790.jpg" alt="rachel-park-dish">
+                </div>
+                <div class="single-dish mb-3">
+                    <img src="../../assets/img/r-rachel-park-366508-unsplash-min-1200x790.jpg" alt="rachel-park-dish">
+                </div>
+                <div class="single-dish mb-3">
+                    <img src="../../assets/img/r-rachel-park-366508-unsplash-min-1200x790.jpg" alt="rachel-park-dish">
+                </div>
             </div>
         </div>
     </div>
@@ -31,18 +54,8 @@
 <script>
 export default {
     methods: {
-        getImagePath: function(img) {
-        return new URL(`../assets/img/${img}`, import.meta.url).href;
-}
+        
     },
-
-    props:{
-        imageRecipe:String,
-        titleRecipe:String,
-        descriptionRecipe:String,
-        dishRecipe:String,
-        buttonRecipe:String
-    }
 }
 </script>
 <style lang="scss" scoped>
@@ -57,10 +70,26 @@ export default {
     padding: 1rem 2.2rem;
 }
 
+.container-single-dish{
+    width: calc(100% / 2);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.single-dish{
+    width: calc(100% / 2);
+    border-left: 1.5rem solid #f5f5f1;
+    height: 100%;
+    img{
+        width: 100%;
+    }
+}
 .card-dish-big{
     background-color: white;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-    margin-right: 3rem;
+    width: calc(100% / 2 - 1rem);
+    margin-right: 1rem;
     h4{
         font-size: 1.3rem;
         margin-top: 1rem;
@@ -77,7 +106,6 @@ export default {
         border-radius: 0.15rem;
         font-size: 0.9rem;
         border: none;
-        margin-bottom: 2rem;
     }
     .dotted-line{
         width: 100%;

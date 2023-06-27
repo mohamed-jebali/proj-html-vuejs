@@ -3,13 +3,10 @@
         <h4 class="text-center">
             POPULAR RECIPES
         </h4>
-        <img src="../../assets/img/r-rachel-park-366508-unsplash-min-1200x790.jpg" alt="">
         <p class="text-center mb-5">
             Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lacinia lobortis.
         </p>
-        <AppRecipes v-for="recipe in listRecipes"
-        :imageRecipe="recipe.img"
-        />
+        <AppRecipes/>
     </div>
 </template>
 <script>
@@ -21,14 +18,6 @@ export default {
     },
     data() {
         return {
-            listRecipes:[
-                {
-                    img:'../../assets/img/Yogurt-Nan.jpg',
-                },
-                {
-                    img:'../../assets/img/r-rachel-park-366508-unsplash-min-1200x790.jpg',
-                },
-            ]
         }
     },
 }
@@ -43,7 +32,7 @@ h4{
     margin-bottom: 1.5rem;
 }
 p{
-    padding: 0 28rem;
+    padding: 0 25rem;
     font-weight: 200;
     color: $darkGrey;
 }
