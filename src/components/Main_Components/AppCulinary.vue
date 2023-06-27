@@ -6,7 +6,7 @@
             Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lacinia lobortis.
         </p>
         <div class="container">
-            <div class="row mx-auto justify-content-between">
+            <div class="row">
                 <AppCardCulinary v-for="card in listCard"
                 :image="card.img"
                 :text="card.text"
