@@ -1,9 +1,9 @@
 <template>
     <div class="jumbo">
         <div class="box-jumbo mx-auto text-center">
-            <span class="title-jumbo">
+            <button class="title-jumbo">
                 TODAYS' PICK
-            </span>
+            </button>
             <div class="text-jumbo">
                 Food Corner: Top Japanese Restaurants for Sushi
                 <p class="date-jumbo">
@@ -39,6 +39,7 @@ export default {
         font-size: 0.9rem;
         position: relative;
         bottom: 15px;
+        border: none;
     }
     .text-jumbo{
         margin-top: 0.5rem;
