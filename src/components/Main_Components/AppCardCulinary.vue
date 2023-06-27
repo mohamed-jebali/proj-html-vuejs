@@ -1,5 +1,5 @@
 <template>
-            <div class="card mx-auto text-center">
+            <div class="card mx-auto text-center mb-5">
                 <img class="mx-auto" :src="image" alt="text">
                 <p class="text-card">
                     {{ text }}
