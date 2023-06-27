@@ -18,7 +18,7 @@ export default {
     
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../../styles/partials/mixin' as *; 
 @use '../../styles/partials/variables' as *;
 

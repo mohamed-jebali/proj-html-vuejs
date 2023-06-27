@@ -61,7 +61,7 @@ h4{
     display: flex;
     flex-wrap: wrap;
     img{
-        height: 265px;
+        height: 225px;
     }
 }
 .single-box{
