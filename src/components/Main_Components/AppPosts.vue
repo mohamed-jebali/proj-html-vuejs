@@ -22,7 +22,7 @@
                     <p>
                         Follow Us
                     </p>
-           <div class="social-container d-flex">
+           <div class="social-container d-flex mb-3">
            <img class="socials-icon" src="../../assets/socials/facebook.svg" alt="facebook-logo" title="facebook">
           <img class="socials-icon" src="../../assets/socials/instagram.svg" alt="instagram-logo" title="Instagram">
           <img class="socials-icon" src="../../assets/socials/twitter.svg" alt="twitter-logo" title="Twitter">
@@ -40,6 +40,44 @@
                 <span class="ms-5">
                     Recent
                 </span>
+            </div>
+            <div class="contacts-comment">
+                <div class="comment d-flex">
+                    <img class="rounded-circle me-4 img-fluid mt-5" src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/single-post-img3-150x150.jpg" alt="single-post-img-3">
+                    <div class="text-box">
+                        <p class="detail-comment">
+                            Food Corner: Top Japanese Restaurants for Sushi <br>
+                            <span class="date">
+                                March 25th, 2019
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="comment d-flex">
+                    <img class="rounded-circle me-4 img-fluid mt-5" src="https://avada.website/food/wp-content/uploads/sites/118/2019/02/singapore-featured-image-150x150.jpg" alt="singapore-image">
+                    <div class="text-box">
+                        <p class="detail-comment">
+                            City Guide: Singapore <br>
+                            <span class="date">
+                                February 27th, 2019 
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="comment d-flex">
+                    <img class="rounded-circle me-4 img-fluid mt-5" src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/fi-toasts-150x150.jpg" alt="fi-toast-image">
+                    <div class="text-box">
+                        <p class="detail-comment">
+                            Why These Toasts with Tea are My New Favorite <br>
+                            <span class="date">
+                                March 25th, 2019
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="twitter-box">
+                twitter box
             </div>
           </div>
                 </div>
@@ -157,6 +195,33 @@ form{
     .divider{
         height: 45px;
         border: 0.5px solid black;
+    }
+
+    .comment{
+
+        display: flex;
+
+        img{
+            height: 60px;
+            width: 60px;
+        }
+
+        .detail-comment{
+            color: black;
+            font-family: 'Catamaran', sans-serif;
+            font-weight: 200;
+        }
+        .date{
+            color: $darkGrey;
+            font-family: 'Catamaran', sans-serif;
+            font-size: 0.85rem;
+        }
+    }
+
+    .twitter-box{
+        background-color: white;
+        height: 600px;
+        border-radius: 0.5rem;
     }
 
 </style>
