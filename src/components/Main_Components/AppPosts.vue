@@ -7,7 +7,7 @@
                 :title="post.title"
                 :date="post.date"
                 />
-        <button class="load-posts">
+        <button class="load-posts mb-5">
             LOAD MORE POSTS
         </button>
             </div>

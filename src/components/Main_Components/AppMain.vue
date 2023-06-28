@@ -5,6 +5,7 @@
   <AppCulinary/>
   <AppFarm/>
   <AppPosts/>
+  <AppSubscribe/>
   </template>
   <script>
   import AppJumbotron from '../Main_Components/AppJumbotron.vue';
@@ -13,6 +14,7 @@
   import AppCulinary from './AppCulinary.vue';
   import AppFarm from './AppFarm.vue';
   import AppPosts from './AppPosts.vue';
+  import AppSubscribe from './AppSubscribe.vue';
   export default {
     name:"AppMain",
     components:{
@@ -21,7 +23,8 @@
       AppPopularRecipes,
       AppCulinary,
       AppFarm,
-      AppPosts
+      AppPosts,
+      AppSubscribe
     }
   }
   </script>
