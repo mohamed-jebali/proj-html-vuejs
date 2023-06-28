@@ -77,7 +77,36 @@
                 </div>
             </div>
             <div class="twitter-box">
-                twitter box
+                <h4>
+                    Tweets from @Theme_Fusion
+                </h4>
+                <div class="account d-flex align-items-center mx-auto">
+                    <img class="theme-fusion-logo img-fluid me-3" src="../../assets/img/3a74ce3d0532b7773b174c45ca3bd05a_normal.png" alt="theme-fusion-logo">
+                    <p class="detail-account me-4">
+                        ThemeFusion <br>
+                        <span class="">
+                            @Theme_Fusion · 2h
+                        </span>
+                    </p>
+                    <img class="socials-icon-blue" src="../../assets/socials/twitter_original-color.svg" alt="twitter-logo" title="Twitter">
+                </div>
+                <div class="text-twitt">
+                    <span class="twitter-color"> #Avada #Studio</span> prebuilt content: We have released 4 items for your website 
+                    <span  class="twitter-color">#design</span> toolkit. July 4th & summer sales containers, a vertical header & more to import with a click <span  class="twitter-color"> //bit.ly/3CPQDvF #WebsiteBuilder #WordPress #wordpresswebsite #resources</span>
+                </div>
+                <div class="img-twitt">
+                    <img src="https://pbs.twimg.com/media/FztbndpWYAEO-Xc?format=jpg&name=small" alt="twitt-image">
+                </div>
+                <div class="icons-twitt d-flex align-items-center justify-content-between mt-2">
+                    <div>
+                        <i class="fa-regular fa-comment me-4"></i>
+                        <i class="fa-regular fa-heart me-2"></i>
+                        <span>
+                            1
+                        </span>
+                    </div>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
             </div>
           </div>
                 </div>
@@ -222,6 +251,54 @@ form{
         background-color: white;
         height: 600px;
         border-radius: 0.5rem;
+        padding: 2rem;
+
+        h4{
+            margin-top: 0.5rem;
+            font-weight: 600;
+            font-size: 1.3rem;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        .detail-account{
+        font-size: 1rem;
+        font-family: 'Catamaran';
+        font-weight: 600;
+        color: black;
+
+        span{
+            color: $darkGrey;
+            font-weight: 300;
+            font-size: 0.85rem;
+        }
+       }
+    }
+    .socials-icon-blue{
+        margin-left: 5rem;
+        height: 15px;
+        color: blue;
+        
+    }
+
+    .theme-fusion-logo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .twitter-color{
+        color: #1d9bf0;
+    }
+
+    .img-twitt{
+        width: 100%;
+        margin-top: 1rem;
+
+        img{
+            width: 100%;
+        }
+    }
+    .icons-twitt{
+        color: $darkGrey;
     }
 
 </style>
