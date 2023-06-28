@@ -13,7 +13,9 @@ export default {
 @use '../styles/partials/variables' as *;
 
 .text-copyright{
-    padding: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 200;
+    padding: 1.5rem; 
     background-color: #f5f5f1;
     color: $darkGrey;
     text-align: center;
