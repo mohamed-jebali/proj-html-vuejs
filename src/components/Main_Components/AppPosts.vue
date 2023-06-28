@@ -1,19 +1,22 @@
 <template>
-       <div class="container">
-        <div class="image-wrapper">
-            <AppSinglePost class="d-flex flex-wrap" v-for="post in listPosts"
-            :image="post.image"
-            :title="post.title"
-            :date="post.date"
-            />
+       <div class="container mx-auto">
+        <div class="wrapper-posts d-flex">
+            <div class="image-wrapper">
+                <AppSinglePost class="d-flex flex-wrap" v-for="post in listPosts"
+                :image="post.image"
+                :title="post.title"
+                :date="post.date"
+                />
+            </div>
+      <nav class="navbar">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+        </form>
+      </nav>
         </div>
-   <nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-    </form>
-  </div>
-    </nav>
+        <button class="load-posts">
+            LOAD MORE POSTS
+        </button>
         </div>
 </template>
 <script>
@@ -67,6 +70,22 @@ export default {
 .image-wrapper{
     display: flex;
     flex-wrap: wrap;
+    width: 70%;
+}
+.navbar{
+    width: 30%;
+    height: 100%;
+}
+.form-control{
+    padding: 1rem;
+    width: 380px;
+}
+.load-posts{
+    width: 70%;
+    border: none;
+    padding: 1.2rem;
+    background-color: #eaeae1;
+    color: $darkGrey;
 }
 
 </style>

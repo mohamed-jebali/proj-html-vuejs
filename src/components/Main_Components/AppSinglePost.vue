@@ -37,13 +37,17 @@ p{
     .card-dish-social{
     background-color: white;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-    width: calc(35% - 3rem );
+    width: calc(49% - 3rem );
     height: 400px;
     margin-right: 3rem;
     h4{
         font-size: 1.3rem;
         margin-top: 1rem;
         font-family: 'Vidaloka', serif;
+        &:hover{
+        color: $orange;
+        transition: 1s;
+    }
     }
     img{
         width: 100%;
