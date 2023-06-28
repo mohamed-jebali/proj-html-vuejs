@@ -24,7 +24,7 @@
             <li>
               About
             </li>
-            <li>
+            <li class="orange">
               Contact
             </li>
           </ul>
@@ -38,6 +38,9 @@
   }
   </script>
   <style lang="scss" scoped>
+
+@use '../styles/partials/mixin' as *; 
+@use '../styles/partials/variables' as *;
 
 .wrapper-brand-social{
   margin-right: 4rem;
@@ -62,4 +65,8 @@
         margin-bottom: 1rem;
       }
     }
+
+    .orange{
+    color: $orange;
+}
   </style>

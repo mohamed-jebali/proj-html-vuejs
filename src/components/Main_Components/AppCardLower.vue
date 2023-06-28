@@ -20,6 +20,8 @@ export default {
 }
 </script>
 <style lang="scss">
+
+
 .wrapper-cards{
     margin-bottom: 5rem;
 }
@@ -32,4 +34,5 @@ export default {
         width: 100%;
     }
 }
+
 </style>
