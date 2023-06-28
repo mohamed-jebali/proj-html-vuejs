@@ -7,7 +7,7 @@
                 :title="post.title"
                 :date="post.date"
                 />
-        <button class="load-posts mb-5">
+        <button class="load-posts">
             LOAD MORE POSTS
         </button>
             </div>
@@ -197,6 +197,7 @@ form{
     padding: 1.2rem;
     background-color: #eaeae1;
     color: $darkGrey;
+    margin-bottom: 5rem;
 }
 .socials-box p{
     color: $orange;

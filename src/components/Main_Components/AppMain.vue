@@ -6,6 +6,7 @@
   <AppFarm/>
   <AppPosts/>
   <AppSubscribe/>
+  <AppCardLower/>
   </template>
   <script>
   import AppJumbotron from '../Main_Components/AppJumbotron.vue';
@@ -15,6 +16,7 @@
   import AppFarm from './AppFarm.vue';
   import AppPosts from './AppPosts.vue';
   import AppSubscribe from './AppSubscribe.vue';
+  import AppCardLower from './AppCardLower.vue'
   export default {
     name:"AppMain",
     components:{
@@ -24,7 +26,8 @@
       AppCulinary,
       AppFarm,
       AppPosts,
-      AppSubscribe
+      AppSubscribe,
+      AppCardLower
     }
   }
   </script>

@@ -64,7 +64,7 @@ h3{
 .navbar{
 
     .form-control{
-        padding: 1rem;
+        padding: 0.85rem;
         width: 400px;
         border: 2px solid  #dfdfdd;
         color: $darkGrey;
@@ -82,7 +82,7 @@ h3{
 
 button{
         background-color: $orange;
-        padding: 1rem 2.5rem;
+        padding: 0.85rem 2.5rem;
         color: $white;
         font-weight: 200;
         font-size: 0.9rem;
