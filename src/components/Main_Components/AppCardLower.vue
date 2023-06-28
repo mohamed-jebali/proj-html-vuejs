@@ -22,9 +22,7 @@ export default {
 <style lang="scss">
 
 
-.wrapper-cards{
-    margin-bottom: 5rem;
-}
+
 .card-dish{
     width: calc(100% / 4);
     height: 100%;

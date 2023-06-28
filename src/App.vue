@@ -2,12 +2,14 @@
 import AppHeader from './components/AppHeader.vue'
 import AppMain from '../src/components/Main_Components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
+import AppCopyright from './components/AppCopyright.vue';
 export default{
     name: "App", 
     components: {
     AppHeader,
     AppMain,
-    AppFooter
+    AppFooter,
+    AppCopyright
 }
 }
 </script>
@@ -16,6 +18,7 @@ export default{
   <AppHeader/>
   <AppMain/>
   <AppFooter/>
+  <AppCopyright/>
 </template>
 
 <style lang="scss">
