@@ -173,10 +173,14 @@ export default {
     display: flex;
     flex-direction: column;
 }
-.form-control{
-    padding: 1rem;
-    width: 330px;
-    border: none;
+
+.navbar{
+    .form-control{
+        padding: 1rem;
+        width: 330px;
+        border: none;
+        
+    }
 }
 form{
     border: 2px solid  #dfdfdd;

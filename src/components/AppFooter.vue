@@ -75,7 +75,7 @@
 
 .bg-wrapper{
   background-color: white;
-  padding-top: 5rem;
+  padding: 4rem 0;
 }
 .wrapper-brand-social{
   margin-right: 10rem;
